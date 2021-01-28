@@ -136,3 +136,32 @@ img.pic {
   background-color: #d5d6d2;
   padding: 25px;
 }
+
+#tools img{
+  width: 200px;
+  height:200px;
+}
+#tools > ul > li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+#tools {
+  background-color: #f9f7f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#tools-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+#tools .name {
+  font-family: "Marcellus", serif;
+}
