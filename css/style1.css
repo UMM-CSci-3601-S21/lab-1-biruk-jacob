@@ -115,7 +115,7 @@ img.pic {
 }
 
 #style-selector li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float:right; /*explore what happens if this is 'right' instead*/
 }
 
 #style-selector li a {
@@ -164,4 +164,7 @@ img.pic {
 }
 #tools .name {
   font-family: "Marcellus", serif;
+}
+.pic{
+  padding: 20px 20px 20px 20px;
 }
