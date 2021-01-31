@@ -6,8 +6,10 @@
  */
 
  body {
-  padding: 30px;
-  background-color: #7a0019;
+  padding: 110px 30px 30px 30px;
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex; /* this is the flexbox model. It adds responsive design to its items */
   flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
   align-items: center; /* These next two properties center the flex items */
@@ -28,10 +30,16 @@
 }
 
 #main-title {
-  color: #ffde7a;
+  color: #43cea2;
   font-family: "Patua One", monospace;
   text-align: center;
-  font-size: 4rem;
+  font-size: 1.5rem;
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
 }
 
 h2 {
@@ -103,20 +111,23 @@ img.pic {
 
 #style-selector {
   position: fixed;
-  background-color: #7a0019;
+  background-color: #fff;
   left: 0;
   right: 0;
   top: 0;
-  height: 46px;
+  height: 86px;
   padding-top: 10px;
+  border-bottom: 5px solid #43cea2;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #style-selector ul {
   list-style-type: none;
-  margin: 0;
+  margin-top: 42px;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 #style-selector li {
@@ -125,15 +136,20 @@ img.pic {
 
 #style-selector li a {
   display: block;
-  color: white;
+  color: #43cea2;
   text-align: center;
-  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  padding: 5px 30px 5px 30px;
+  border: 2px solid  #43cea2; /*this adds some spacing around the items in our "nav bar" */
+  border-radius: 20px;
   text-decoration: none;
+  margin:0 5px 0 5px;
+  z-index: 3;
 }
 
 /* Change the link background color to #000 (black) on hover */
 #style-selector li a:hover {
-  background-color: #000;
+  background-color:  #43cea2;
+  color: white;
 }
 
 #validation {
