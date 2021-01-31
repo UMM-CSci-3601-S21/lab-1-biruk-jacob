@@ -4,6 +4,9 @@
  * use . in front of the name of a class of things from your html page
  * use , to separate a list of things that have some shared css rule
  */
+ *{
+  font-family: 'Raleway', sans-serif;
+ }
 
  body {
   padding: 110px 30px 30px 30px;
@@ -24,14 +27,13 @@
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 53em;
   }
 }
 
 #main-title {
   color: #43cea2;
-  font-family: "Patua One", monospace;
   text-align: center;
   font-size: 1.5rem;
   position: fixed;
@@ -42,30 +44,26 @@
   top: 0;
 }
 
-h2 {
-  font-family: "EB Garamond", serif;
-}
-
 a {
-  color:  #7a0019;
+  color:  #185a9d;
 }
 
 .section {
-  border-radius: 25px;
-  padding: 20px;
-  border: 5px solid;
+  border-radius: 10px;
+  padding: 26px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   margin: 10px;
   max-width: 48em;
 }
 
 #courses {
-  background-color: #ffde7a;
-  font-family: "Marcellus", serif;
+  background-color: #fff;
 }
-
+.section h2 {
+  color:#185a9d;
+}
 #pslo {
-  background-color: #d5d6d2;
-  font-family: "Marcellus", serif;
+  background-color: #fff;
 }
 
 #faculty {
@@ -95,18 +93,14 @@ a {
 }
 
 .name {
-  font-family: "Dancing Script", cursive;
   font-size: 2rem;
   display: inline-block;
 }
 
-.office {
-  font-family: "Marcellus", serif;
-}
-
 img.pic {
   width: 100%;
-  border: 4px solid #000000;
+  border-radius: 20px;
+  border: 4px solid #43cea2;
 }
 
 #style-selector {
@@ -175,7 +169,6 @@ img.pic {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #tools-list {
   padding-left: 0;
@@ -184,9 +177,6 @@ img.pic {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-}
-#tools .name {
-  font-family: "Marcellus", serif;
 }
 .icon{
   width: 20px;
