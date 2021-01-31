@@ -24,13 +24,11 @@
  * elements when the width of the screen exceeds 925px to put
  * them side-by-side.
  */
-@media screen and (min-width: 925px) {
   .pslo-courses-container {
     display: flex;
     flex-direction: column;
     max-width: 53em;
   }
-}
 
 #main-title {
   color: #43cea2;
@@ -144,6 +142,7 @@ img.pic {
 #style-selector li a:hover {
   background-color:  #43cea2;
   color: white;
+  transition-duration: 300ms;
 }
 
 #validation {
