@@ -188,3 +188,24 @@ img.pic {
 .local .local-icon {
   display: inline-block;
 }
+.version-control .icon-container ::after{
+  content: "<i class="fas fa-code-branch"></i>";
+}
+.ide .icon-container ::after{
+  content: "<i class="fas fa-terminal"></i>";
+}
+.testing .icon-container ::after{
+  content: "<i class="fas fa-tasks"></i>";
+}
+.local .icon-container ::before{
+  content: "<i class="fas fa-desktop"></i>";
+}
+.cloud .icon-container ::before{
+  content: "<i class="fas fa-cloud"></i>";
+}
+
+.placeholder{
+  width: 2px;
+  height: 2px;
+  background-color: #7a0019;
+}
