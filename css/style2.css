@@ -172,7 +172,7 @@
    flex-direction: column;
    justify-content: center;
    align-content: center;
-   width: 58em;
+   width: 100%;
  }
 
  #tools-list {
@@ -283,6 +283,13 @@
      padding: 12px 0px 12px 0px;
    }
    .right-divider {
-     width: 55%;
+     width: 60%;
+     max-width: 300px;
+     min-width: 100px;
+   }
+   #tools {
+     margin-right: 16px;
+     margin-left: 16px;
+     width: 95%;
    }
  }
